@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/crescendosw/frequency-analysis/issues"
   },
-  "homepage": "https://github.com/crescendosw/frequency-analysis#readme"
+  "homepage": "https://github.com/crescendosw/frequency-analysis#readme",
+  "dependencies": {
+    "ml-regression-polynomial": "^3.0.1"
+  }
 }
