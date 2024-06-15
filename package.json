@@ -4,7 +4,7 @@
   "description": "Vocal frequency analysis software",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,13 @@
   },
   "homepage": "https://github.com/crescendosw/frequency-analysis#readme",
   "dependencies": {
-    "ml-regression-polynomial": "^3.0.1"
+    "ml-regression-polynomial": "^3.0.1",
+    "node-wav": "^0.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.4",
+    "typescript": "^5.4.5"
   }
 }

@@ -27,7 +27,7 @@ describe('findErrorHz', () => {
     // g3 = 196;
     // find_err(v_g3(4000:4000+4096), g3)
     // ans = -0.070425
-    let buffer = fs.readFileSync('/Users/home/dev/crescendo/webapp/src/util/test/voice_g3.wav');
+    let buffer = fs.readFileSync('./tests/voice_g3.wav');
     const {sampleRate, channelData} = wav.decode(buffer);
     const g3Hz = 196;
     const samples = Object.values(channelData[0]).slice(4000, 4000 + 4096) as number[];
