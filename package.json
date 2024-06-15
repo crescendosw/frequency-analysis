@@ -1,0 +1,19 @@
+{
+  "name": "frequency-analysis",
+  "version": "1.0.0",
+  "description": "Vocal frequency analysis software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crescendosw/frequency-analysis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crescendosw/frequency-analysis/issues"
+  },
+  "homepage": "https://github.com/crescendosw/frequency-analysis#readme"
+}
