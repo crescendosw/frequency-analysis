@@ -1,5 +1,22 @@
 import { PolynomialRegression } from 'ml-regression-polynomial';
 
+// TODO(hewitt): results don't match Octave.  Suggestions from Brian to debug:
+// You are correct on the 44100 Hz sampling rate.  I thought I'd read 44000, but good catch.  In your number comparisons below, did you modify the octave code to use 44100?
+//
+// Octave slicing: x(10:14) in octave would be x[9] through x[13] in C, or x[9:14] in Python.  Octave has the base of 1, and the last number is included (unlike Python).  The exact number of samples (4096 vs 4097) doesn't matter since we are just averaging over them.
+//
+// The "k" offset is used for indexing, but it represents how many positions the samples are shifted.  A shift value of  k=0 would of course line up very well!
+//
+// Brian
+//
+// You are correct on the 44100 Hz sampling rate.  I thought I'd read 44000, but good catch.  In your number comparisons below, did you modify the octave code to use 44100?
+//
+// Octave slicing: x(10:14) in octave would be x[9] through x[13] in C, or x[9:14] in Python.  Octave has the base of 1, and the last number is included (unlike Python).  The exact number of samples (4096 vs 4097) doesn't matter since we are just averaging over them.
+//
+// The "k" offset is used for indexing, but it represents how many positions the samples are shifted.  A shift value of  k=0 would of course line up very well!
+//
+// Brian
+
 // ASDF = Average Squared Difference Function
 // Roughly equivalent to an autocorrelation, except here we look for a minimum.
 // The minimum corresponds to where a delayed copy of the signal most closely resembles
